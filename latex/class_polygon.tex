@@ -1,0 +1,96 @@
+\hypertarget{class_polygon}{}\doxysection{Polygon Class Reference}
+\label{class_polygon}\index{Polygon@{Polygon}}
+
+
+{\ttfamily \#include $<$Polygon.\+h$>$}
+
+Inheritance diagram for Polygon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_polygon}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_polygon_aefcf3b63d73c0791f24c0768e2e75427}\label{class_polygon_aefcf3b63d73c0791f24c0768e2e75427}} 
+const std\+::string \& {\bfseries get\+Id} () const
+\item 
+\mbox{\Hypertarget{class_polygon_ae1ae9dd5e5613f119af3e31488427b01}\label{class_polygon_ae1ae9dd5e5613f119af3e31488427b01}} 
+double {\bfseries get\+Area} () const
+\item 
+\mbox{\Hypertarget{class_polygon_a83d963c5553428544a403baabe44e85c}\label{class_polygon_a83d963c5553428544a403baabe44e85c}} 
+std\+::string {\bfseries get\+Type} () const
+\item 
+\mbox{\hyperlink{class_point}{Point}} $\ast$ \mbox{\hyperlink{class_polygon_a20d69b1d156420d9ed79bdb6fac25d1b}{get\+Pos}} ()
+\item 
+void \mbox{\hyperlink{class_polygon_a523e730f78f54dbb1c1a0ea825563b20}{Move}} (double x, double y)
+\item 
+int \mbox{\hyperlink{class_polygon_a3287a00f8a243af2004663508c6b147a}{Compare}} (\mbox{\hyperlink{class_polygon}{Polygon}} other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_polygon_a1602c2b8b9929153f38568629aaf34f6}\label{class_polygon_a1602c2b8b9929153f38568629aaf34f6}} 
+std\+::string {\bfseries id}
+\item 
+\mbox{\Hypertarget{class_polygon_a5f20f28cc4ac4302dd3687b8db6744bd}\label{class_polygon_a5f20f28cc4ac4302dd3687b8db6744bd}} 
+int {\bfseries point\+Count}
+\item 
+\mbox{\Hypertarget{class_polygon_af55304cf42fc0cea2c22c1c375b51108}\label{class_polygon_af55304cf42fc0cea2c22c1c375b51108}} 
+double {\bfseries area}
+\item 
+\mbox{\Hypertarget{class_polygon_aa23777a50318c001d041bb3dd1d9f27d}\label{class_polygon_aa23777a50318c001d041bb3dd1d9f27d}} 
+\mbox{\hyperlink{class_point}{Point}} $\ast$$\ast$ {\bfseries points}
+\item 
+\mbox{\Hypertarget{class_polygon_a42a90e3ad3e5cfd125df146373c38f40}\label{class_polygon_a42a90e3ad3e5cfd125df146373c38f40}} 
+std\+::string {\bfseries type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract polygon shape 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_polygon_a3287a00f8a243af2004663508c6b147a}\label{class_polygon_a3287a00f8a243af2004663508c6b147a}} 
+\index{Polygon@{Polygon}!Compare@{Compare}}
+\index{Compare@{Compare}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Compare()}{Compare()}}
+{\footnotesize\ttfamily int Polygon\+::\+Compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polygon}{Polygon}}}]{other }\end{DoxyParamCaption})}
+
+Check if area of this polygon is more than the other\textquotesingle{}s 
+\begin{DoxyParams}{Parameters}
+{\em other} & \mbox{\hyperlink{class_polygon}{Polygon}} to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if this polygon is bigger, -\/1 if the other\textquotesingle{}s is bigger, 0 if equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_polygon_a20d69b1d156420d9ed79bdb6fac25d1b}\label{class_polygon_a20d69b1d156420d9ed79bdb6fac25d1b}} 
+\index{Polygon@{Polygon}!getPos@{getPos}}
+\index{getPos@{getPos}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} $\ast$ Polygon\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A polygon\textquotesingle{}s position is the position of it\textquotesingle{}s point \begin{DoxyReturn}{Returns}
+Reference to a point at (x,y) position of polygon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_polygon_a523e730f78f54dbb1c1a0ea825563b20}\label{class_polygon_a523e730f78f54dbb1c1a0ea825563b20}} 
+\index{Polygon@{Polygon}!Move@{Move}}
+\index{Move@{Move}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Polygon\+::\+Move (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+Moves a polygon relatively 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Polygon.\+h\item 
+Polygon.\+cpp\end{DoxyCompactItemize}
